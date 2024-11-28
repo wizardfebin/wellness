@@ -1016,7 +1016,7 @@
 
         <!--start stepper one--> 
 			   
-        <h6 class="text-uppercase">Non Linear</h6>
+        <h6 class="text-uppercase">Cleaning and Food Serving </h6>
         <hr>
 				<div id="stepper1" class="bs-stepper">
 				  <div class="card">
@@ -1027,8 +1027,8 @@
 							  <div class="step-trigger" role="tab" id="stepper1trigger1" aria-controls="test-l-1">
 								<div class="bs-stepper-circle">1</div>
 								<div class="">
-									<h5 class="mb-0 steper-title">Personal Info</h5>
-									<p class="mb-0 steper-sub-title">Enter Your Details</p>
+									<h5 class="mb-0 steper-title">Cleanliness Before Food</h5>
+									<p class="mb-0 steper-sub-title">Enter Cleanliness Before Food</p>
 								</div>
 							  </div>
 							</div>
@@ -1037,8 +1037,8 @@
 								<div class="step-trigger" role="tab" id="stepper1trigger2" aria-controls="test-l-2">
 								  <div class="bs-stepper-circle">2</div>
 								  <div class="">
-									  <h5 class="mb-0 steper-title">Account Details</h5>
-									  <p class="mb-0 steper-sub-title">Setup Account Details</p>
+									  <h5 class="mb-0 steper-title">Food Serving Details</h5>
+									  <p class="mb-0 steper-sub-title">Ensure the Food is Served</p>
 								  </div>
 								</div>
 							  </div>
@@ -1047,8 +1047,8 @@
 								<div class="step-trigger" role="tab" id="stepper1trigger3" aria-controls="test-l-3">
 								  <div class="bs-stepper-circle">3</div>
 								  <div class="">
-									  <h5 class="mb-0 steper-title">Education</h5>
-									  <p class="mb-0 steper-sub-title">Education Details</p>
+									  <h5 class="mb-0 steper-title">Cleanliness After Food</h5>
+									  <p class="mb-0 steper-sub-title">Enter Cleanliness after Food</p>
 								  </div>
 								</div>
 							  </div>
@@ -1057,8 +1057,8 @@
 									<div class="step-trigger" role="tab" id="stepper1trigger4" aria-controls="test-l-4">
 									<div class="bs-stepper-circle">4</div>
 									<div class="">
-										<h5 class="mb-0 steper-title">Work Experience</h5>
-										<p class="mb-0 steper-sub-title">Experience Details</p>
+										<h5 class="mb-0 steper-title">Staffs Assesment</h5>
+										<p class="mb-0 steper-sub-title"> Enter Cleaning & Serving Staffs</p>
 									</div>
 									</div>
 								</div>
@@ -1068,54 +1068,346 @@
 					  <div class="bs-stepper-content">
 						<form onSubmit="return false">
 						  <div id="test-l-1" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger1">
-							<h5 class="mb-1">Your Personal Information</h5>
-							<p class="mb-4">Enter your personal information to get closer to copanies</p>
+							<h5 class="mb-1">Checkpoint</h5>
+							<p class="mb-4">Cleanliness Before Taking Food</p>
 
-							<div class="row g-3">
-								<div class="col-12 col-lg-6">
-									<label class="form-label">First Name</label>
-									<input type="text" class="form-control" placeholder="First Name">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Last Name</label>
-									<input type="text" class="form-control" placeholder="Last Name">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Phone Number</label>
-									<input type="text" class="form-control" placeholder="Phone Number">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">E-mail Address</label>
-									<input type="text" class="form-control" placeholder="Enter Email Address">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Country</label>
-									<select class="form-select">
-										<option selected>---</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
-									  </select>
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Language</label>
-									<select class="form-select">
-										<option selected>---</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
-									  </select>
-								</div>
-								<div class="col-12 col-lg-6">
-									<button class="btn btn-grd-primary px-4" onclick="stepper1.next()">Next<i class='bx bx-right-arrow-alt ms-2'></i></button>
-								</div>
-							</div><!---end row-->
+							<div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="mb-4">
+                        <h5 class="mb-3">Cleanliness Before Taking Food</h5>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Criteria</th>
+                              <th>Guest 1</th>
+                              <th>Guest 2</th>
+                              <th>Guest 3</th>
+                              <th>Guest 4</th>
+                              <th>Guest 5</th>
+                              <th>Guest 6</th>
+                              <th>Guest 7</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!-- Row 1 -->
+                            <tr>
+                              <td>Cleanliness of the table</td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                            </tr>
+                            <!-- Add similar rows for all other criteria -->
+                            <tr>
+                              <td>Cleanliness of the chair/bench</td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                <label class="form-check-label" for="cleanTable1"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                <label class="form-check-label" for="cleanTable2"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                <label class="form-check-label" for="cleanTable3"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                <label class="form-check-label" for="cleanTable4"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                <label class="form-check-label" for="cleanTable5"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                <label class="form-check-label" for="cleanTable6"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                <label class="form-check-label" for="cleanTable7"></label>
+                              </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Cleanliness of the floor/wall</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Cleanliness of the surrounding area</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Any bad/foul smell from the surrounding area</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Cleanliness of the crockery, cutlery, and table mat</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Quantity of food</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Quality of food</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Quantity of wastage of food</td>
+                                <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-12 col-lg-6">
+                        <button class="btn btn-grd-primary px-4" onclick="stepper1.next()">Next<i class='bx bx-right-arrow-alt ms-2'></i></button>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+								<!---end row-->
 							
 						  </div>
 
 						  <div id="test-l-2" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger2">
+                
 
-							<h5 class="mb-4">Food Serving</h5>
+                <h5 class="mb-1">Checkpoint</h5>
+                <p class="mb-4">Food Serving</p>
+              
+							<div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <!-- <div class="mb-4"> -->
+                        <h5 class="mb-3">Food Serving</h5>
                           <div class="table-responsive">
                             <table class="table table-bordered">
                               <thead>
@@ -1598,87 +1890,513 @@
                                 </tr>
                               </tbody>
                             </table>
-								<div class="col-12">
-									<div class="d-flex align-items-center gap-3">
-									  <button class="btn btn-grd-info px-4" onclick="stepper1.previous()"><i class='bx bx-left-arrow-alt me-2'></i>Previous</button>
-										<button class="btn btn-grd-primary px-4" onclick="stepper1.next()">Next<i class='bx bx-right-arrow-alt ms-2'></i></button>
-									</div>
-								</div>
+                          </div>
+                          <div class="col-12">
+                            <div class="d-flex align-items-center gap-3">
+                              <button class="btn btn-grd-info px-4" onclick="stepper1.previous()"><i class='bx bx-left-arrow-alt me-2'></i>Previous</button>
+                              <button class="btn btn-grd-primary px-4" onclick="stepper1.next()">Next<i class='bx bx-right-arrow-alt ms-2'></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- </div> -->
+                  
+								
 							</div><!---end row-->
 							
 						  </div>
 
 						  <div id="test-l-3" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger3">
-							<h5 class="mb-1">Your Education Information</h5>
-							<p class="mb-4">Inform companies about your education life</p>
+							<h5 class="mb-1">Checkpoint</h5>
+							<p class="mb-4">Cleanliness After Taking Food</p>
 
-							<div class="row g-3">
-								<div class="col-12 col-lg-6">
-									<label class="form-label">School Name</label>
-									<input type="text" class="form-control" placeholder="School Name">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Board Name</label>
-									<input type="text" class="form-control" placeholder="Board Name">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">University Name</label>
-									<input type="text" class="form-control" placeholder="University Name">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Course Name</label>
-									<select class="form-select">
-										<option selected>---</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
-									  </select>
-								</div>
-								<div class="col-12">
-									<div class="d-flex align-items-center gap-3">
-									  <button class="btn btn-grd-info px-4" onclick="stepper1.previous()"><i class='bx bx-left-arrow-alt me-2'></i>Previous</button>
-										<button class="btn btn-grd-primary px-4" onclick="stepper1.next()">Next<i class='bx bx-right-arrow-alt ms-2'></i></button>
-									</div>
-								</div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="mb-4">
+                        <h5 class="mb-3">Cleanliness After Taking Food</h5>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Criteria</th>
+                              <th>Guest 1</th>
+                              <th>Guest 2</th>
+                              <th>Guest 3</th>
+                              <th>Guest 4</th>
+                              <th>Guest 5</th>
+                              <th>Guest 6</th>
+                              <th>Guest 7</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!-- Row 1 -->
+                            <tr>
+                              <td>Cleanliness of the table</td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                            </tr>
+                            <!-- Add similar rows for all other criteria -->
+                            <tr>
+                              <td>Cleanliness of the chair/bench</td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                <label class="form-check-label" for="cleanTable1"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                <label class="form-check-label" for="cleanTable2"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                <label class="form-check-label" for="cleanTable3"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                <label class="form-check-label" for="cleanTable4"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                <label class="form-check-label" for="cleanTable5"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                <label class="form-check-label" for="cleanTable6"></label>
+                              </div></td>
+                            <td><div class="form-check form-switch form-check-primary">
+                                <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                <label class="form-check-label" for="cleanTable7"></label>
+                              </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Cleanliness of the floor/wall</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Cleanliness of the surrounding area</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Any bad/foul smell from the surrounding area</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Cleanliness of the crockery, cutlery, and table mat</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Quantity of food</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Quality of food</td>
+                                                            <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                            <tr>
+                              <td>Quantity of wastage of food</td>
+                                <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable1">
+                                  <label class="form-check-label" for="cleanTable1"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable2">
+                                  <label class="form-check-label" for="cleanTable2"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable3">
+                                  <label class="form-check-label" for="cleanTable3"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable4">
+                                  <label class="form-check-label" for="cleanTable4"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable5">
+                                  <label class="form-check-label" for="cleanTable5"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable6">
+                                  <label class="form-check-label" for="cleanTable6"></label>
+                                </div></td>
+                              <td><div class="form-check form-switch form-check-primary">
+                                  <input class="form-check-input visible-switch" type="checkbox" role="switch" id="cleanTable7">
+                                  <label class="form-check-label" for="cleanTable7"></label>
+                                </div></td>
+                              <!-- Repeated pattern for checkboxes -->
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-12">
+                        <div class="d-flex align-items-center gap-3">
+                          <button class="btn btn-grd-info px-4" onclick="stepper1.previous()"><i class='bx bx-left-arrow-alt me-2'></i>Previous</button>
+                          <button class="btn btn-grd-primary px-4" onclick="stepper1.next()">Next<i class='bx bx-right-arrow-alt ms-2'></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              	
 							</div><!---end row-->
 							
-						  </div>
+						  <!-- </div> -->
 
 						  <div id="test-l-4" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger4">
-							<h5 class="mb-1">Work Experiences</h5>
-							<p class="mb-4">Can you talk about your past work experience?</p>
+							<h5 class="mb-1">Checkpoint</h5>
+							<p class="mb-4">Food Serving & Cleaning Staff</p>
 
-							<div class="row g-3">
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Experience 1</label>
-									<input type="text" class="form-control" placeholder="Experience 1">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Position</label>
-									<input type="text" class="form-control" placeholder="Position">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Experience 2</label>
-									<input type="text" class="form-control" placeholder="Experience 2">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Position</label>
-									<input type="text" class="form-control" placeholder="Position">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Experience 3</label>
-									<input type="text" class="form-control" placeholder="Experience 3">
-								</div>
-								<div class="col-12 col-lg-6">
-									<label class="form-label">Position</label>
-									<input type="text" class="form-control" placeholder="Position">
-								</div>
-								<div class="col-12">
-									<div class="d-flex align-items-center gap-3">
-									  <button class="btn btn-grd-info px-4" onclick="stepper1.previous()"><i class='bx bx-left-arrow-alt me-2'></i>Previous</button>
-										<button class="btn btn-grd-primary px-4" onclick="stepper1.next()">Next<i class='bx bx-right-arrow-alt ms-2'></i></button>
-									</div>
-								</div>
+							<div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="mb-4">
+                        <h5 class="mb-3">Food Serving & Cleaning Staff</h5>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Criteria</th>
+                              <th>Guest 1</th>
+                              <th>Guest 2</th>
+                              <th>Guest 3</th>
+                              <th>Guest 4</th>
+                              <th>Guest 5</th>
+                              <th>Guest 6</th>
+                              <th>Guest 7</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!-- Row 1: Food served by -->
+                            <tr>
+                              <td>Food served by</td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff A">Staff A</option>
+                                  <option value="Staff B">Staff B</option>
+                                  <option value="Staff C">Staff C</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff A">Staff A</option>
+                                  <option value="Staff B">Staff B</option>
+                                  <option value="Staff C">Staff C</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff A">Staff A</option>
+                                  <option value="Staff B">Staff B</option>
+                                  <option value="Staff C">Staff C</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff A">Staff A</option>
+                                  <option value="Staff B">Staff B</option>
+                                  <option value="Staff C">Staff C</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff A">Staff A</option>
+                                  <option value="Staff B">Staff B</option>
+                                  <option value="Staff C">Staff C</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff A">Staff A</option>
+                                  <option value="Staff B">Staff B</option>
+                                  <option value="Staff C">Staff C</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff A">Staff A</option>
+                                  <option value="Staff B">Staff B</option>
+                                  <option value="Staff C">Staff C</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <!-- Row 2: Cleaning by -->
+                            <tr>
+                              <td>Cleaning by</td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff X">Staff X</option>
+                                  <option value="Staff Y">Staff Y</option>
+                                  <option value="Staff Z">Staff Z</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff X">Staff X</option>
+                                  <option value="Staff Y">Staff Y</option>
+                                  <option value="Staff Z">Staff Z</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff X">Staff X</option>
+                                  <option value="Staff Y">Staff Y</option>
+                                  <option value="Staff Z">Staff Z</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff X">Staff X</option>
+                                  <option value="Staff Y">Staff Y</option>
+                                  <option value="Staff Z">Staff Z</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff X">Staff X</option>
+                                  <option value="Staff Y">Staff Y</option>
+                                  <option value="Staff Z">Staff Z</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff X">Staff X</option>
+                                  <option value="Staff Y">Staff Y</option>
+                                  <option value="Staff Z">Staff Z</option>
+                                </select>
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="Staff X">Staff X</option>
+                                  <option value="Staff Y">Staff Y</option>
+                                  <option value="Staff Z">Staff Z</option>
+                                </select>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-12">
+                        <div class="d-flex align-items-center gap-3">
+                          <button class="btn btn-grd-info px-4" onclick="stepper1.previous()"><i class='bx bx-left-arrow-alt me-2'></i>Previous</button>
+                          <!-- <button class="btn btn-grd-primary px-4" onclick="stepper1.next()">Next<i class='bx bx-right-arrow-alt ms-2'></i></button> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+								
 							</div><!---end row-->
 							
 						  </div>
